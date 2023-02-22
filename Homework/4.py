@@ -6,3 +6,12 @@
 
 n = int(input('Введите размер n: '))
 m = int(input('Введите размер m: '))
+k = int(input('Введите количество долек: '))
+
+
+if m % k == m or n % k == n:
+    print(f'{n} {m} {k} -> yes')
+if m == k:
+    print(f'{n} {m} {k} -> yes')
+if k < m:
+    print(f'{n} {m} {k} -> no')

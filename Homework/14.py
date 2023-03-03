@@ -2,10 +2,15 @@
 # 10 -> 1 2 4 8
 
 N = int(input('Введите число: '))
-
 i = 1
-
 while i < N:
     i = i * 2
-
     print(i)
+
+
+# Альтернатива
+# n = int(input())
+# i = 0
+# while 2 ** i <= n:
+# print(2 ** i)
+# i += 1

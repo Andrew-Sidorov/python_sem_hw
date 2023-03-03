@@ -11,3 +11,11 @@ S = X + Y
 P = X * Y
 print(f'Петя загадал {S} и {P}')
 print(f'Катя отгадала {X} и {Y}')
+
+# Альтернатива
+# x = int(input())
+# y = int(input())
+# for i in range(x):
+# for j in range(y):
+# if x == i + j and y == i * j:
+# print(i, j)

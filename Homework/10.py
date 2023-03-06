@@ -24,3 +24,12 @@ if one > zero:
     print(f'нужно перевернуть {zero}')
 elif zero > one:
     print(f'нужно перевернуть {one}')
+
+
+# Аналогичное решение
+import random
+
+coins = [random.randint(0,1) for _ in range(9)]
+print(coins)
+
+print('Перевернуть 1' if coins.count(1) < coins.count(0) else 'Перевернуть 0')

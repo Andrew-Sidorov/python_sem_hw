@@ -19,3 +19,47 @@ print(f'Катя отгадала {X} и {Y}')
 # for j in range(y):
 # if x == i + j and y == i * j:
 # print(i, j)
+
+
+
+# Альтернатива преподавателя
+summa = int(input('Введите сумму чисел: '))
+melti = int(input('Введите протъизведение'))
+
+flag = False
+for x in range(1000):
+    if flag:
+        break
+    for y in range (1000):
+        if x + y == summa and x * y == multi:
+            print(x,y)
+            flag = True
+            break
+
+# Альтернатива преподавателя 2 
+
+# x + y = z
+# x*y=c
+# y = z - x
+# x*(z-x)=c
+# -x**2 + z*x - c = 0
+
+x = y = 0
+a,b,c = 1, -summa, multi
+
+def roots (a, b, c):
+    discr = b**2 - 4*a*c
+    if dicr > 0:
+        x1 = (b - discr**0.5)/2*a
+        x2 = (b + discr**0.5)/2*a
+        return int(x1), int(x2)
+    elif discr ==0:
+        x = b / 2 * a
+        return int(x)
+    else:
+        return 'Петя обманул Катю'
+    
+print(roots(a,b,c))    
+
+
+

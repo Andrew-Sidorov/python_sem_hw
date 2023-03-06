@@ -14,3 +14,10 @@ while i < N:
 # while 2 ** i <= n:
 # print(2 ** i)
 # i += 1
+
+# Альтернатива преподавателя 
+number = int(input('Введите придел: '))
+i=1
+while i < number:
+    print(i, end=' ')
+    i*=2

@@ -10,16 +10,17 @@ num = int(input('Введите искомое число: '))
 list = [random.randint(0, 10) for _ in range(5)]
 print(list)
 
-# count = 0
-# for item in list:
-#     if item == num:
-#         count = count + 1
+count = 0
+for item in list:
+    if item == num:
+        count = count + 1
 
 
-# print(f'Колличество искомых чисел: {count}')
+print(f'Колличество искомых чисел: {count}')
 
-for i in list:
-    while i > num:
-        num1 = num + 1
-        num1 += 1
-print(num1)
+i = 0
+while i < len(list):
+    if list[i] == num:
+        list[i] = num or list[i] - 1
+    i += 1
+    print(f'максимально близкое ему по значению {list}')

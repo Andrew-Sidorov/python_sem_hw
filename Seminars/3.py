@@ -1,18 +1,18 @@
 # #Общая задача
 # Дан список чисел. Определите сколько в нём встречается различных чисел.
 
-# import random
+import random
 
-# my_list = [random.randint(0, 10) for _ in range(20)]
-# print(my_list)
+my_list = [random.randint(0, 10) for _ in range(20)]
+print(my_list)
 
-# new_list = []
-# for item in my_list:
-#     if item not in new_list:
-#         new_list.append(item)
+new_list = []
+for item in my_list:
+    if item not in new_list:
+        new_list.append(item)
 
-# print(new_list)
-# print(len(new_list))  # len -> длина списка
+print(new_list)
+print(len(new_list))  # len -> длина списка
 
 
 # # Аналагичное решение
@@ -56,33 +56,33 @@
 # уникальными значениями
 
 
-# import random
-# my_list = [random.randint(0, 10) for _ in range(10)]
-# # set_list = set(my_list)
-# # print(set_list)
-# my_dict = {}
-# for i in my_list:
+import random
+my_list = [random.randint(0, 10) for _ in range(10)]
+# set_list = set(my_list)
+# print(set_list)
+my_dict = {}
+for i in my_list:
 
-#     if my_dict.get[i]
-#     my_dict[i]
+    if my_dict.get[i]
+    my_dict[i]
 
 # решение преподавателя (через словари)
 
-# import random
-# my_list = [random.randint(0, 10) for _ in range(10)]
-# print(my_list)
+import random
+my_list = [random.randint(0, 10) for _ in range(10)]
+print(my_list)
 
-# my_dict = {}
+my_dict = {}
 
-# for item in my_list:
-#     my_dict[item] = my_dict.get(item, 0) + 1
-# print(my_dict)
+for item in my_list:
+    my_dict[item] = my_dict.get(item, 0) + 1
+print(my_dict)
 
-# new_list = []
-# for key, value in my_dict.items():
-#     if value == 1:
-#         new_list.append(key)
-# print(new_list)
+new_list = []
+for key, value in my_dict.items():
+    if value == 1:
+        new_list.append(key)
+print(new_list)
 
 # Аналагичное решение через .COUNT
 import random

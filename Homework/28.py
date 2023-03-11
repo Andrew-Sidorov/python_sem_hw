@@ -6,13 +6,19 @@
 # 2 2
 # 4
 
+a = int(input('Vvedite A: '))
+b = int(input('Vvedite B: '))
+
+
 def summa(a, b):
-    if a == 1:
-        return 1
-    elif b == -1:
-        return 0
-    else:
-        return summa(a)+summa(b)
+    if a == a:
+        print(f'число целое {1}')
+        return summa(a+b)
+    elif b == b:
+        print(f'число отрицательное {-1}')
+        return summa(a) + summa(-b)
+    # else:
+    #     return summa(a + b)
 
 
 print(summa(a, b))

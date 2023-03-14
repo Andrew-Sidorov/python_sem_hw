@@ -15,3 +15,5 @@ def print_operation_table(operation, num_rows=9, num_columns=9):
     num = operation(x, y)
     nums.append(num)
 print('\t\t'.join([str(x) for x in nums]))
+
+Что тут надо поправить?
